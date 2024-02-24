@@ -1,7 +1,14 @@
 package uvg.edu.binario.controller;
+/**
+ * author Alejandro García
+ * version 1.0
+ */
 
 public class DecodificadorController {
-
+    /**
+     * Convierte un número hexadecimal de 3 dígitos en su equivalente decimal.
+     * @param hex El número hexadecimal de 3 dígitos a convertir.
+     */
     public void hexToDecimal(String hex){
         if(hex.length() == 3){
             try {
@@ -16,7 +23,10 @@ public class DecodificadorController {
 
 
     }
-
+    /**
+     * Convierte un número decimal en su equivalente hexadecimal.
+     * @param decimal El número decimal a convertir.
+     */
     public void decimalToHex(String decimal){
         try {
             int decimalInt = Integer.parseInt(decimal);
